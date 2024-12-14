@@ -16,12 +16,20 @@
                 <a href="#"><img src="./assets/icons/abstract-tree-logo-removebg-preview.svg" alt=""></a>
                 <div class="nav__links">
                     <div class="nav__links__list">
-                        <a href="#">Home</a>
-                        <a href="#">About</a>
-                        <a href="#">Contact</a>
+                        <a href="#" class="nav__link">Home</a>
+                        <a href="#" class="nav__link">About</a>
+                        <a href="#" class="nav__link">Contact</a>
                     </div>
 
                     <button class="button">Order Now </button>
+                </div>
+                <div class="menu">
+                    <img src="./assets/icons/stack.png" alt="">
+                    <div class="menu_link nav__links__list">
+                        <a href="#" class="nav__link">Home</a>
+                        <a href="#" class="nav__link">About</a>
+                        <a href="#" class="nav__link">Contact</a>
+                    </div>
                 </div>
             </div>
             <h1><span>Plant a tree today </span><br>
@@ -29,7 +37,7 @@
             <p>
                 We know how important trees are to our existence and for the well-being of the planet at large, which is
                 why we have put together a number</p>
-                <button class="button hero_btn">Order Now </button>
+            <button class="button hero_btn">Order Now </button>
             <div class="hero">
                 <div class="hero__text">
                     <b>355+</b>
@@ -42,6 +50,81 @@
             </div>
         </div>
     </header>
+    <main>
+        <section class="plant">
+            <div class="container">
+                <div class="plant__cards">
+                    <div class="plant__card">
+                        <h3>Plants are the lungs of the world</h3>
+                        <div class="plant__card__img">
+                            <img src="./assets/images/pngwing.svg" alt="Plant decoration 1">
+                        </div>
+                    </div>
+                    <div class="plant__card">
+                        <div class="plant__card__img">
+                            <img src="./assets/images/pngwing2.svg" alt="Plant decoration 2">
+                        </div>
+                        <div class="plant__card__text">
+                            <p>That were not animals, and included algae and</p>
+                            <p>however, all current definitions </p>
+                            <button class="button">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="plant">
+            <div class="container">
+                <div class="plant__cards">
+                    <div class="plant__card">
+                        <div class="plant__card__img imgs-p">
+                            <img src="./assets/images/pngwing3.svg" alt="Plant decoration 1">
+                        </div>
+                        <div class="plant__card__text">
+                            <form>
+                                <label>
+                                    <input type="checkbox" id="checkbox"> 
+                                    <p>Ost plants are multicellular organisms. Green plants obtain most of their energy </p>
+                                </label>
+                                <label>
+                                    <input type="checkbox" id="checkbox"> 
+                                    <p>Sunlight takes about 8.3 minutes to reach Earth from the surface of the Sun.</p>
+                                </label>
+                                <label>
+                                    <input type="checkbox" id="checkbox"> 
+                                    <p>Researchers can measure the intensity of sunlight using a sunshine recorder</p>
+                                </label>
+                                <label>
+                                    <input type="checkbox" id="checkbox"> 
+                                    <p>That were not animals, and included algae and fungi however, </p>
+                                </label>
+                            </form> 
+                        </div>
+                    </div>
+                    <div class="plant__card">
+                        <div class="plant__card__text">
+                            <h3>A great initiative indeed</h3>
+                        </div>
+                        <div class="plant__card__img">
+                            <img src="./assets/images/pngwing4.svg" alt="Plant decoration 2">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script>
+        const menuIcon = document.querySelector('.menu');
+        const menuLink = document.querySelector('.menu_link');
+
+        menuIcon.addEventListener('click', () => {
+            menuLink.classList.toggle('active');  // Menu linkga 'active' klassi qo‘shiladi yoki olib tashlanadi
+        });
+
+
+    </script>
 </body>
 
 </html>
