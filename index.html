@@ -84,19 +84,32 @@
                         <div class="plant__card__text" data-aos="fade-right">
                             <form>
                                 <label data-aos="fade-up">
-                                    <input type="checkbox" id="checkbox">
-                                    <p>Ost plants are multicellular organisms. Green plants obtain most of their energy</p>
+                                    <!-- <input type="checkbox" id="checkbox"> -->
+                                    <div class="checkbox">
+                                        <img src="./assets/icons/chack.svg" alt="">
+                                    </div>
+                                    <p>Ost plants are multicellular organisms. Green plants obtain most of their energy
+                                    </p>
                                 </label>
                                 <label data-aos="fade-up" data-aos-delay="100">
-                                    <input type="checkbox" id="checkbox">
+                                    <!-- <input type="checkbox" id="checkbox"> -->
+                                    <div class="checkbox">
+                                        <img src="./assets/icons/chack.svg" alt="">
+                                    </div>
                                     <p>Sunlight takes about 8.3 minutes to reach Earth from the surface of the Sun.</p>
                                 </label>
                                 <label data-aos="fade-up" data-aos-delay="200">
-                                    <input type="checkbox" id="checkbox">
+                                    <!-- <input type="checkbox" id="checkbox"> -->
+                                    <div class="checkbox">
+                                        <img src="./assets/icons/chack.svg" alt="">
+                                    </div>
                                     <p>Researchers can measure the intensity of sunlight using a sunshine recorder</p>
                                 </label>
                                 <label data-aos="fade-up" data-aos-delay="300">
-                                    <input type="checkbox" id="checkbox">
+                                    <!-- <input type="checkbox" id="checkbox"> -->
+                                    <div class="checkbox">
+                                        <img src="./assets/icons/chack.svg" alt="">
+                                    </div>
                                     <p>That were not animals, and included algae and fungi however,</p>
                                 </label>
                             </form>
@@ -112,7 +125,7 @@
                     </div>
                 </div>
             </div>
-        </section>    
+        </section>
         <section class="plant" data-aos="fade-in">
             <div class="container" data-aos="fade-up">
                 <div class="plant__cards">
@@ -129,7 +142,8 @@
                             <img class="video_play" src="./assets/icons/video_play.svg" alt="Play video icon">
                         </div>
                         <div class="plant__card__text" data-aos="fade-up">
-                            <p>Plants are predominantly photosynthetic eukaryotes of the kingdom Plantae. Historically, the plant kingdom massed all living things</p>
+                            <p>Plants are predominantly photosynthetic eukaryotes of the kingdom Plantae. Historically,
+                                the plant kingdom massed all living things</p>
                         </div>
                     </div>
                 </div>
@@ -155,7 +169,8 @@
                                 <b>$97.00</b>
                             </div>
                         </div>
-                        <p data-aos="fade-up">that were not animals, and included algae and fungi however, all current definitions </p>
+                        <p data-aos="fade-up">that were not animals, and included algae and fungi however, all current
+                            definitions </p>
                     </div>
                     <div class="plant__card" data-aos="zoom-in">
                         <h3 data-aos="fade-right">Get our greatest plants</h3>
@@ -163,7 +178,8 @@
                             <img src="./assets/images/pngwing9.svg" alt="Plant decoration 2">
                             <div class="plant__card__img__text">
                                 <h4>Eled Doming</h4>
-                                <h5>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</h5>
+                                <h5>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequat duis enim velit mollit.</h5>
                                 <b>$50.00</b>
                             </div>
                         </div>
@@ -174,10 +190,10 @@
                 </div>
             </div>
         </section>
-        
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="./assets/icons/up-arrow.png" alt=""></button>
     </main>
     <footer class="footer">
-        <div class="container"> 
+        <div class="container">
             <img class="logo" src="./assets/icons/abstract-tree-logo-removebg-preview.svg" alt="">
             <div class="footer__links">
                 <p>ABOUT US</p>
@@ -194,9 +210,9 @@
                 <p>FOLLOW US</p>
                 <div class="footer__links__btn">
                     <button><img src="./assets/icons/instagram.svg" alt=""></button>
-                <button><img src="./assets/icons/facebook.svg" alt=""></button>
-                <button><img src="./assets/icons/twitter.svg" alt=""></button>
-                <button><img src="./assets/icons/youtube.svg" alt=""></button>
+                    <button><img src="./assets/icons/facebook.svg" alt=""></button>
+                    <button><img src="./assets/icons/twitter.svg" alt=""></button>
+                    <button><img src="./assets/icons/youtube.svg" alt=""></button>
                 </div>
             </div>
         </div>
@@ -208,10 +224,25 @@
             menuLink.classList.toggle('active');
         });
     </script>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
 </body>
 
 </html>
